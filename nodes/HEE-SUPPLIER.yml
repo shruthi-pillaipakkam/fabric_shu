@@ -1,0 +1,139 @@
+fileVersion: 1
+id: 6b5509e3-6835-4911-88e3-7cd1a5010b5b
+name: SUPPLIER
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: HEE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1fc2454-1a04-434f-83be-7cdf074e7aae
+          stepCounter: 6b5509e3-6835-4911-88e3-7cd1a5010b5b
+        config: {}
+        dataType: decimal(38,6)
+        defaultValue: ""
+        description: ""
+        name: S_SUPPKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e4ebb63-621a-4f06-9611-653f23a2303d
+          stepCounter: 6b5509e3-6835-4911-88e3-7cd1a5010b5b
+        config: {}
+        dataType: varchar(8000)
+        defaultValue: ""
+        description: ""
+        name: S_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 73e0bfcf-e014-409d-8f35-8fdd22c4855a
+          stepCounter: 6b5509e3-6835-4911-88e3-7cd1a5010b5b
+        config: {}
+        dataType: varchar(8000)
+        defaultValue: ""
+        description: ""
+        name: S_ADDRESS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3e6c1a3-1b5a-4231-b319-4b964db1f418
+          stepCounter: 6b5509e3-6835-4911-88e3-7cd1a5010b5b
+        config: {}
+        dataType: decimal(38,6)
+        defaultValue: ""
+        description: ""
+        name: S_NATIONKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 39971dd8-c389-4843-9fbe-02e15f509705
+          stepCounter: 6b5509e3-6835-4911-88e3-7cd1a5010b5b
+        config: {}
+        dataType: varchar(8000)
+        defaultValue: ""
+        description: ""
+        name: S_PHONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d55a600-6121-4851-9ef8-3a18c80752d7
+          stepCounter: 6b5509e3-6835-4911-88e3-7cd1a5010b5b
+        config: {}
+        dataType: decimal(38,6)
+        defaultValue: ""
+        description: ""
+        name: S_ACCTBAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7124d3e1-e613-4d84-ad74-78eefaaef6e2
+          stepCounter: 6b5509e3-6835-4911-88e3-7cd1a5010b5b
+        config: {}
+        dataType: varchar(8000)
+        defaultValue: ""
+        description: ""
+        name: S_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+    join:
+      joinCondition: FROM {{ ref('HEE', 'SUPPLIER') }}
+  name: SUPPLIER
+  schema: ""
+  sqlType: Source
+  table: SUPPLIER
+  type: sourceInput
+  version: 1
+type: Node

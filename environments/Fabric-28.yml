@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "28"
+mappingDefinitions:
+  HEE:
+    database: COALESCE_DEV
+    schema: dbo
+  TEST:
+    database: COALESCE_DEV
+    schema: bryan_test
+name: Fabric
+type: Environment
