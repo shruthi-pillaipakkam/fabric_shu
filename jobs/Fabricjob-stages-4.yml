@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "4"
+includeSelector: "{ location: HEE name: CUSTOMER } OR { location: HEE name: NATION } OR { location: HEE name: ORDERS } OR { location: HEE name: STG_CUSTOMER } OR { location: HEE name: STG_ORDERS } OR { location: HEE name: STG_PART } OR { location: HEE name: PART }"
+name: Fabric job - stages
+type: Job
