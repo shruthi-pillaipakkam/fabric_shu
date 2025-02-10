@@ -64,7 +64,7 @@ operation:
           columnCounter: cead4326-8c90-442b-840d-caf071197f17
           stepCounter: a252635a-51c4-4603-af77-7c05d015d420
         config: {}
-        dataType: DECIMAL(38,6)
+        dataType: DECIMAL(38)
         description: ""
         name: O_TOTALPRICE
         nullable: true
@@ -108,7 +108,7 @@ operation:
         config: {}
         dataType: VARCHAR(8000)
         description: ""
-        name: O_CLERK
+        name: O_CLERK_O
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -127,20 +127,6 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 5a3a05f1-da2f-46b1-b61f-883fa026b4f8
-                stepCounter: 515be8c6-c38f-4557-ad3d-2c1dcf517e19
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 0c3834d4-e73b-495c-995c-62e01e3f99de
-          stepCounter: a252635a-51c4-4603-af77-7c05d015d420
-        config: {}
-        dataType: VARCHAR(8000)
-        description: ""
-        name: O_COMMENT
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 67e6ebe4-5e9b-4238-9610-b5cec8d2a3f5
                 stepCounter: 515be8c6-c38f-4557-ad3d-2c1dcf517e19
             transform: ""
     cteString: ""
