@@ -64,7 +64,7 @@ operation:
           columnCounter: cead4326-8c90-442b-840d-caf071197f17
           stepCounter: a252635a-51c4-4603-af77-7c05d015d420
         config: {}
-        dataType: DECIMAL(38)
+        dataType: DECIMAL(38,6)
         description: ""
         name: O_TOTALPRICE
         nullable: true
