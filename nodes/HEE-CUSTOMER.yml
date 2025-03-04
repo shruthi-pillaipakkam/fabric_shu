@@ -3,7 +3,6 @@ id: ab3824ca-ff72-45a4-9ac4-69d5612c9080
 name: CUSTOMER
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: ""
   locationName: HEE
@@ -145,12 +144,9 @@ operation:
           - columnReferences: []
             transform: ""
         transform: ""
-    join:
-      joinCondition: FROM {{ ref('HEE', 'CUSTOMER') }}
   name: CUSTOMER
   schema: ""
   sqlType: Source
-  table: CUSTOMER
   type: sourceInput
   version: 1
 type: Node

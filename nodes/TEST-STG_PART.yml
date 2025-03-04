@@ -1,26 +1,27 @@
 fileVersion: 1
-id: 81d98e40-524b-45a9-a28a-eccb3b5f6270
+id: 9d5b26b6-555c-4b92-9d6a-ffc273e04668
 name: STG_PART
 operation:
   config:
     insertStrategy: INSERT
     postSQL: ""
     preSQL: ""
+    selectDistinct: false
     testsEnabled: true
     truncateBefore: true
   database: ""
   deployEnabled: true
   description: ""
   isMultisource: false
-  locationName: HEE
+  locationName: TEST
   materializationType: table
   metadata:
     appliedNodeTests: []
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 4d45ed20-c0e1-4ee1-8853-65d221a1c01f
-          stepCounter: 81d98e40-524b-45a9-a28a-eccb3b5f6270
+          columnCounter: 34627162-f7be-4333-991d-ca812ca544ee
+          stepCounter: 9d5b26b6-555c-4b92-9d6a-ffc273e04668
         config: {}
         dataType: DECIMAL(38,6)
         description: ""
@@ -33,8 +34,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 21b98a17-5b42-4070-90df-7166bc3e7116
-          stepCounter: 81d98e40-524b-45a9-a28a-eccb3b5f6270
+          columnCounter: 4fba1079-dd35-4227-a7f9-795320d611a4
+          stepCounter: 9d5b26b6-555c-4b92-9d6a-ffc273e04668
         config: {}
         dataType: VARCHAR(8000)
         description: ""
@@ -47,8 +48,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 849278d3-633a-4c16-9085-5309a34a7d86
-          stepCounter: 81d98e40-524b-45a9-a28a-eccb3b5f6270
+          columnCounter: 71a26dad-5752-4704-9dfb-de450903505f
+          stepCounter: 9d5b26b6-555c-4b92-9d6a-ffc273e04668
         config: {}
         dataType: VARCHAR(8000)
         description: ""
@@ -61,8 +62,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 331c614c-016f-44e7-a76d-8cf9a4b42678
-          stepCounter: 81d98e40-524b-45a9-a28a-eccb3b5f6270
+          columnCounter: b3953642-8fe9-4d11-9207-361282c1f6e8
+          stepCounter: 9d5b26b6-555c-4b92-9d6a-ffc273e04668
         config: {}
         dataType: VARCHAR(8000)
         description: ""
@@ -75,8 +76,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: ee578b26-cb73-43d4-858e-c433c1c64131
-          stepCounter: 81d98e40-524b-45a9-a28a-eccb3b5f6270
+          columnCounter: 88522369-7110-4a4b-acea-95d2000d02a8
+          stepCounter: 9d5b26b6-555c-4b92-9d6a-ffc273e04668
         config: {}
         dataType: VARCHAR(8000)
         description: ""
@@ -89,8 +90,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 5d79988b-ebee-4888-8d03-b804cc7da405
-          stepCounter: 81d98e40-524b-45a9-a28a-eccb3b5f6270
+          columnCounter: de5f8972-60b7-4c33-86a6-08365b1d7fa9
+          stepCounter: 9d5b26b6-555c-4b92-9d6a-ffc273e04668
         config: {}
         dataType: DECIMAL(38,6)
         description: ""
@@ -103,8 +104,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 818a0cee-7de4-4855-a6f7-aba34456bd01
-          stepCounter: 81d98e40-524b-45a9-a28a-eccb3b5f6270
+          columnCounter: ac9b8a17-3e7b-4e04-a77c-3ee943417f34
+          stepCounter: 9d5b26b6-555c-4b92-9d6a-ffc273e04668
         config: {}
         dataType: VARCHAR(8000)
         description: ""
@@ -117,8 +118,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: efca7b8e-524c-405e-8ea2-bda9dbcab76e
-          stepCounter: 81d98e40-524b-45a9-a28a-eccb3b5f6270
+          columnCounter: 16962075-ec2a-44f1-8197-5cfebcabbbd3
+          stepCounter: 9d5b26b6-555c-4b92-9d6a-ffc273e04668
         config: {}
         dataType: DECIMAL(38,6)
         description: ""
@@ -131,8 +132,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: c5c29dcc-6aa1-4b91-854c-c58b8f5668b0
-          stepCounter: 81d98e40-524b-45a9-a28a-eccb3b5f6270
+          columnCounter: 08ed71f4-8583-48e9-873a-eaa6f2fa6f99
+          stepCounter: 9d5b26b6-555c-4b92-9d6a-ffc273e04668
         config: {}
         dataType: VARCHAR(8000)
         description: ""

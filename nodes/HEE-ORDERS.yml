@@ -3,7 +3,6 @@ id: 515be8c6-c38f-4557-ad3d-2c1dcf517e19
 name: ORDERS
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: ""
   locationName: HEE
@@ -162,12 +161,9 @@ operation:
           - columnReferences: []
             transform: ""
         transform: ""
-    join:
-      joinCondition: FROM {{ ref('HEE', 'ORDERS') }}
   name: ORDERS
   schema: ""
   sqlType: Source
-  table: ORDERS
   type: sourceInput
   version: 1
 type: Node

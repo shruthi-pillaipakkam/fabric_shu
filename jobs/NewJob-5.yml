@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "5"
+includeSelector: "{ location: TEST name: STG_PART } OR { location: TEST name: DIM_PART } OR { location: TEST name: FCT_PART } OR { location: TEST name: PSTG_PART } OR { location: TEST name: V_PART } OR { location: HEE name: PART }"
+name: New Job
+type: Job

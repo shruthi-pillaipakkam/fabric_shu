@@ -3,7 +3,6 @@ id: 4e91de7d-f6d7-442e-89f4-031cca6e401d
 name: PART
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: ""
   locationName: HEE
@@ -162,12 +161,9 @@ operation:
           - columnReferences: []
             transform: ""
         transform: ""
-    join:
-      joinCondition: FROM {{ ref('HEE', 'PART') }}
   name: PART
   schema: ""
   sqlType: Source
-  table: PART
   type: sourceInput
   version: 1
 type: Node
