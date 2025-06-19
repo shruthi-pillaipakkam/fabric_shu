@@ -1,0 +1,198 @@
+steps:
+  PSTG_REGION1-98d0047c-8e21-4d70-ba19-17ea5385c933:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION ALL
+        orderbycolumn:
+          items:
+            - {}
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: false
+        truncateBefore: false
+      database: ""
+      deployEnabled: true
+      description: ""
+      id: 98d0047c-8e21-4d70-ba19-17ea5385c933
+      isMultisource: false
+      locationName: HEE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b40c5351-9936-44af-8ed1-99fd39b2e6b9
+              stepCounter: 98d0047c-8e21-4d70-ba19-17ea5385c933
+            config: {}
+            dataType: DECIMAL
+            defaultValue: ""
+            description: ""
+            isSurrogateKey: true
+            name: PSTG_REGION1_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2ad3cf8e-0f5c-4020-9eb2-a3653710a4f2
+              stepCounter: 98d0047c-8e21-4d70-ba19-17ea5385c933
+            dataType: decimal
+            description: ""
+            name: R_REGIONKEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 215e7c5e-5728-4eb0-9faf-467c4584a707
+                    stepCounter: c0759995-54d1-4d79-ac09-46e441e82e0f
+                transform: ""
+          - columnReference:
+              columnCounter: eda231dc-7981-4643-b99e-5828e089a71b
+              stepCounter: 98d0047c-8e21-4d70-ba19-17ea5385c933
+            dataType: varchar(8000)
+            description: ""
+            name: R_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: cc503b15-0bfc-4885-b72a-e43287443e58
+                    stepCounter: c0759995-54d1-4d79-ac09-46e441e82e0f
+                transform: ""
+          - columnReference:
+              columnCounter: 57c2ec07-71bc-44f6-8187-1248d99037da
+              stepCounter: 98d0047c-8e21-4d70-ba19-17ea5385c933
+            dataType: varchar(8000)
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f2a05a8e-ed96-4f54-9b0a-31c333ed39fc
+                    stepCounter: c0759995-54d1-4d79-ac09-46e441e82e0f
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ed878b7d-e396-4bee-9858-05ff0902e00a
+              stepCounter: 98d0047c-8e21-4d70-ba19-17ea5385c933
+            config: {}
+            dataType: DECIMAL
+            defaultValue: ""
+            description: ""
+            isSystemVersion: true
+            name: SYSTEM_VERSION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8a66140c-032a-4fdd-b1f5-d18a96256206
+              stepCounter: 98d0047c-8e21-4d70-ba19-17ea5385c933
+            config: {}
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            isSystemCurrentFlag: true
+            name: SYSTEM_CURRENT_FLAG
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b1f4b839-2b10-49e9-85ad-784361ed99d8
+              stepCounter: 98d0047c-8e21-4d70-ba19-17ea5385c933
+            config: {}
+            dataType: DATETIME2(3)
+            defaultValue: ""
+            description: ""
+            isSystemStartDate: true
+            name: SYSTEM_START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(GETDATE() AS DATETIME2(3))
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1a05d5d9-60b8-4894-a76b-4323314d56ef
+              stepCounter: 98d0047c-8e21-4d70-ba19-17ea5385c933
+            config: {}
+            dataType: DATETIME2(3)
+            defaultValue: ""
+            description: ""
+            isSystemEndDate: true
+            name: SYSTEM_END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST('2999-12-31 00:00:00' AS DATETIME2(6))
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: bfad74fc-d8d8-4584-ae18-c229616ae449
+              stepCounter: 98d0047c-8e21-4d70-ba19-17ea5385c933
+            config: {}
+            dataType: DATETIME2(3)
+            defaultValue: ""
+            description: ""
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(GETDATE() AS DATETIME2(3))
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a50c210e-84e2-4167-be47-b56cf6a267fd
+              stepCounter: 98d0047c-8e21-4d70-ba19-17ea5385c933
+            config: {}
+            dataType: DATETIME2(3)
+            defaultValue: ""
+            description: ""
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(GETDATE() AS DATETIME2(3))
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: HEE
+                nodeName: STG_REGION1
+            join:
+              joinCondition: FROM {{ ref('HEE', 'STG_REGION1') }} [STG_REGION1]
+            name: PSTG_REGION1
+            noLinkRefs: []
+      name: PSTG_REGION1
+      overrideSQL: false
+      schema: ""
+      sqlType: "19"
+      type: sql
+    stepCounter: 98d0047c-8e21-4d70-ba19-17ea5385c933
