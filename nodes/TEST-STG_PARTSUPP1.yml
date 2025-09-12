@@ -9,11 +9,11 @@ operation:
     selectDistinct: false
     testsEnabled: true
     truncateBefore: true
-  database: ""
+  database: COALESCE_DEV
   deployEnabled: true
   description: ""
   isMultisource: false
-  locationName: HEE
+  locationName: TEST
   materializationType: table
   metadata:
     appliedNodeTests: []
@@ -104,7 +104,7 @@ operation:
         noLinkRefs: []
   name: STG_PARTSUPP1
   overrideSQL: false
-  schema: ""
+  schema: kyle_test
   sqlType: Stage
   type: sql
   version: 1
