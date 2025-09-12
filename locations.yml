@@ -1,5 +1,6 @@
-defaultStorageMapping: HEE
+defaultStorageMapping: TEST
 fileVersion: 1
 locations:
   - HEE
   - TEST
+  - TEST2

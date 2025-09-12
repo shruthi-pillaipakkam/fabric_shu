@@ -6,21 +6,40 @@ Coalesce permits you to copy and modify this script for the purposes of using wi
 does not permit copying or modification for any other purpose.  
 #}
 {# == Node Type Version        : 1  == #}
-{# == Node Type Name           : View == #}
-{# == Node Type Description    : This node creates view. It override create sql and distinct for view == #}
+{# == Node Type Name           : Dimension  == #}
+{# == Node Type Description    : This node loads data into dimension table and maintain history using config options distinct,multi-source  == #}
 
 {% if node.override.create.enabled %}
 	
 	{{ node.override.create.script }}
-{% else %}
-{{ stage('Drop Stage View') }}
 
-    DROP VIEW IF EXISTS {{ ref_no_link(node.location.name, node.name, include_db=False) }}
-    {% set source = sources[0] %}
-    {{ stage('Create Stage View') }}
-    CREATE VIEW {{ ref_no_link(node.location.name, node.name, include_db=False) }}
+{% elif node.materializationType == 'table' %}
+  {{ stage('Drop Dimension Table') }}
+  DROP TABLE IF EXISTS {{ ref_no_link(node.location.name, node.name) }}
+
+	{{ stage('Create Dimension Table') }}
+
+	CREATE TABLE {{ ref_no_link(node.location.name, node.name) }}
+	(
+		{% for col in columns %}
+             [{{ col.name }}] {{ col.dataType }}
+			{%- if not col.nullable %} NOT NULL
+			{% endif %}
+			{%- if not loop.last -%}, {% endif %}
+		{% endfor %}
+	)
+    
+{% elif node.materializationType == 'view' %}
+    {{ stage('Drop Dimension View') }}
+
+    DROP VIEW IF EXISTS {{ ref_no_link(node.location.name, node.name) }}
+
+
+    {{ stage('Create Dimension View') }}
+
+    CREATE VIEW {{ ref_no_link(node.location.name, node.name) }}
     (
-        {% for col in source.columns %}
+        {% for col in columns %}
             [{{ col.name }}]
             {%- if not loop.last -%}, {% endif %}
         {% endfor %}
@@ -28,9 +47,9 @@ does not permit copying or modification for any other purpose.
     AS
     {% for source in sources %}
         SELECT
-		{% if config.selectDistinct -%}	 
-		DISTINCT	
-		{%- endif -%}
+         {% if config.selectDistinct %}
+        DISTINCT
+        {% endif %}
         {% for col in source.columns %}
             {{ get_source_transform(col) }} AS [{{ col.name }}]
             {%- if not loop.last -%}, {% endif %}
@@ -46,4 +65,5 @@ does not permit copying or modification for any other purpose.
             {% endif %}
         {% endif %}
     {% endfor %}
-  {% endif %}
+
+{% endif %}

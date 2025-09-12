@@ -15,10 +15,10 @@ does not permit copying or modification for any other purpose.
 {% else %}
 {{ stage('Drop Stage View') }}
 
-    DROP VIEW IF EXISTS {{ ref_no_link(node.location.name, node.name, include_db=False) }}
+    DROP VIEW IF EXISTS {{ ref_no_link(node.location.name, node.name) }}
     {% set source = sources[0] %}
     {{ stage('Create Stage View') }}
-    CREATE VIEW {{ ref_no_link(node.location.name, node.name, include_db=False) }}
+    CREATE VIEW {{ ref_no_link(node.location.name, node.name) }}
     (
         {% for col in source.columns %}
             [{{ col.name }}]

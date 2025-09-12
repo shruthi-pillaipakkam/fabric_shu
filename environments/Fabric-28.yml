@@ -1,0 +1,14 @@
+fileVersion: 1
+id: "28"
+mappingDefinitions:
+  HEE:
+    database: COALESCE_DEV
+    schema: dbo
+  TEST:
+    database: COALESCE_DEV
+    schema: shruthi_test
+  TEST2:
+    database: COALESCE_DEV_TESTING
+    schema: dbo
+name: Fabric
+type: Environment
