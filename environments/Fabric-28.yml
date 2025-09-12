@@ -6,6 +6,6 @@ mappingDefinitions:
     schema: dbo
   TEST:
     database: COALESCE_DEV
-    schema: shruthi_test
+    schema: bryan_test
 name: Fabric
 type: Environment
