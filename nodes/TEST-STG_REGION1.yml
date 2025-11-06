@@ -9,7 +9,7 @@ operation:
     selectDistinct: false
     testsEnabled: true
     truncateBefore: true
-  database: ""
+  database: COALESCE_DEV
   deployEnabled: true
   description: ""
   isMultisource: false
@@ -75,7 +75,7 @@ operation:
         noLinkRefs: []
   name: STG_REGION1
   overrideSQL: false
-  schema: ""
+  schema: shruthi_test
   sqlType: Stage
   type: sql
   version: 1

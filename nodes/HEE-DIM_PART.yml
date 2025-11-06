@@ -9,7 +9,7 @@ operation:
     selectDistinct: false
     testsEnabled: false
     truncateBefore: false
-  database: ""
+  database: COALESCE_DEV
   deployEnabled: true
   description: ""
   isMultisource: false
@@ -279,7 +279,7 @@ operation:
         noLinkRefs: []
   name: DIM_PART
   overrideSQL: false
-  schema: ""
+  schema: dbo
   sqlType: Dimension
   type: sql
   version: 1

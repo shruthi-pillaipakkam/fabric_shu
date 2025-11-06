@@ -2,7 +2,7 @@ fileVersion: 1
 id: b5c9162f-009d-40b4-8e45-9ccdff9451f2
 name: PART
 operation:
-  database: ""
+  database: COALESCE_DEV
   deployEnabled: true
   description: ""
   locationName: HEE
@@ -162,7 +162,7 @@ operation:
             transform: ""
         transform: ""
   name: PART
-  schema: ""
+  schema: dbo
   sqlType: Source
   type: sourceInput
   version: 1

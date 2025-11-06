@@ -1,0 +1,8 @@
+fileVersion: 1
+id: "1"
+macroString: |-
+  {%macro lfg()%}
+  IM A FAB MACRO
+  {%endmacro%}
+name: macro
+type: Macro

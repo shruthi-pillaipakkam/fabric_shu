@@ -13,7 +13,7 @@ operation:
     selectDistinct: false
     testsEnabled: false
     truncateBefore: false
-  database: ""
+  database: COALESCE_DEV
   deployEnabled: true
   description: ""
   isMultisource: false
@@ -198,7 +198,7 @@ operation:
         noLinkRefs: []
   name: PSTG_REGION2
   overrideSQL: false
-  schema: ""
+  schema: shruthi_test
   sqlType: "19"
   type: sql
   version: 1

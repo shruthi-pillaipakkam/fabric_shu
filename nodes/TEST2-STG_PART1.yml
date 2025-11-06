@@ -9,7 +9,7 @@ operation:
     selectDistinct: false
     testsEnabled: true
     truncateBefore: true
-  database: ""
+  database: COALESCE_DEV_TESTING
   deployEnabled: true
   description: ""
   isMultisource: false
@@ -159,7 +159,7 @@ operation:
         noLinkRefs: []
   name: STG_PART1
   overrideSQL: false
-  schema: ""
+  schema: dbo
   sqlType: Stage
   type: sql
   version: 1

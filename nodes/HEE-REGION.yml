@@ -2,7 +2,7 @@ fileVersion: 1
 id: 1c85f95d-a594-41a3-a467-b2ccd585da32
 name: REGION
 operation:
-  database: ""
+  database: COALESCE_DEV
   deployEnabled: true
   description: ""
   locationName: HEE
@@ -60,7 +60,7 @@ operation:
             transform: ""
         transform: ""
   name: REGION
-  schema: ""
+  schema: dbo
   sqlType: Source
   type: sourceInput
   version: 1
